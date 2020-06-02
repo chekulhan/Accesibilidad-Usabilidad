@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1. orden de tabulacion
+    <h1 tabindex="0">Accesibilidad</h1>
+    <p tabindex="2">Aqui en parrafo</p>
+    <img tabindex="-1" src="https://i2.wp.com/plenaidentidad.com/wp-content/uploads/2009/09/Accesibilidad-plena-identidad.gif" alt="">
+
+    <div tabindex="1">Mas informacion aqui</div>
+
+
+    <br>
+    2. Influencia de CSS:
+    <button style="float: right">primer boton</button>
+    <button>segundo boton</button>
+    <button>ultimo boton</button>
+
+
+    
+
+
+
+
+    <br>
+    <p>3. Usar document.activeElement para ver en CONSOLE el foco actual</p>
+    <br>
+    4. EL uso de display: none; OR visibility: hidden 
+    <div tabindex="0" style="display: none;visibility: hidden;">Un div aqui sin foco</div>
+    <div tabindex="0">otro div aqui</div>
+
+    <br>5.  Focus de botones - aunque no tiene el foco, puedes hacer que si lo tiene
+    <button id="btn1" tabindex="-1">Boton sin foco</button>
+    <button onclick="btn1.focus();">Doy el foco a btn1</button>
+    
+
+
+</body>
+</html>
